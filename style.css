@@ -1,0 +1,625 @@
+:root {
+    --primary: #ebe3a4;
+    --secondary: #f0d29e;
+    --border: #98734a; 
+    --text: #332e2a;
+    --bg-element: #efead7;
+    
+}
+
+html {
+    scroll-behavior: smooth;
+}
+@font-face {
+    font-family: lot;
+    src: url(Assets/font/LOT.otf);
+}
+
+body {
+    margin: 0;
+    background-color: var(--primary);
+}
+
+/* Hero-Section */
+.hero-section {
+    background-image: url(Assets/Images/hero-bg.svg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    text-align: center;
+    padding: 2vh 0;
+    background-color: var(--primary);
+    border-bottom: 2px solid;
+    z-index: 99;
+}
+
+.navbar a {
+    color: var(--text);
+    text-decoration: none;
+    font-family: fredoka;
+    font-size: 2rem;
+    margin: 0 2vw;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: var(--border);
+    border-bottom: 4px #98734a solid;
+    transition: 0.1s ease-in;
+}
+
+.hero-logo img {
+    filter: drop-shadow(0 0 20px #ffffff);
+}
+
+.hero-text{
+    font-family: fredoka;
+    font-size: 2rem;
+}
+
+.hero-text h1 {
+    margin: 0;
+    color: var(--text);
+}
+
+.hero-text span {
+    color: var(--border);
+    text-decoration: underline;
+}
+
+.hero-text button {
+    width: 20vw;
+    padding: 2vh;
+    background-color: var(--bg-element);
+    border: 5px solid #98734a;
+    border-radius: 100px;
+    font-family: chewy;
+    font-size: 1.2rem;
+    color: var(--border);
+}
+
+.hero-text button:hover {
+    color: var(--text);
+    background-color: #f0d29e;
+    transition: 0.1s ease-in;
+    filter: drop-shadow(6px 6px 0 #332e2a);
+}
+/* Hero-Section */
+
+/* About-Section */
+.about-section {
+    height: 110vh;
+    background-color: var(--secondary);
+}
+
+.about-section h1 {
+    font-size: 4rem;
+    font-family: sour gummy;
+    margin: 0;
+    text-align: center;
+    padding-top: 9vh;
+    text-shadow: 5px 5px #ffffff;
+}
+
+.about-image img {
+    filter: drop-shadow(-20px 10px 0 #332e2a);
+}
+
+.about-desc p {
+    font-family: fredoka;
+    color: var(--text);
+    font-size: 3rem;
+    text-align: justify;
+}
+
+.about-desc h2 {
+    font-family: Sour Gummy;
+    font-size: 3rem;
+    color: var(--text);
+    text-shadow: 5px 5px #ffffff;
+    border-bottom: 5px #332e2a solid;
+    padding-bottom: 5px;
+}
+
+.about p span {
+    font-weight: bold;
+}
+/* About-Section */
+
+/* Products-Section */
+.products {
+    height: 110vh;
+    position: relative;
+}
+
+.amplang-top {
+    width: 100vw;
+    left: 0;
+    position: absolute;
+    top: 0;
+}
+
+.ori-box img, .sea-box img {
+    filter: drop-shadow(10px 10px #332e2a);
+}
+
+.products{
+    text-align: center;
+}
+
+.products h2 {
+    margin: 0;
+    font-family: lot;
+    color: var(--text);
+}
+
+.ori-box h2 {
+    text-shadow: 2px 2px #b28b64;
+}
+
+.sea-box h2 {
+    text-shadow: 2px 2px #6ab07d;
+}
+
+.products p{
+    margin: 0;
+    font-family: fredoka;
+    color: var(--text);
+    font-weight: bold;
+}
+
+.products h1 {
+    font-size: 4rem;
+    font-family: sour gummy;
+    margin: 0;
+    text-align: center;
+    padding-top: 9vh;
+    text-shadow: 5px 5px #ffffff;
+}
+/* Products-Section */
+/* Location-Section */
+.location {
+    height: 110vh;
+    background-color: var(--secondary);
+}
+
+.location h1 {
+    font-size: 4rem;
+    font-family: sour gummy;
+    margin: 0;
+    text-align: center;
+    padding-top: 9vh;
+    text-shadow: 5px 5px #ffffff;
+}
+
+.map-desc p {
+    font-family: fredoka;
+    color: #ffffff;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.map-frame {
+    background-color: #3e3e37;
+}
+/* Location-Section */
+/* Video-Section */
+.ads {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.ads iframe {
+    width: 80vw;
+    height: 75vh;
+    border-radius: 20px;
+}
+/* Video-Section */
+
+/* Bottom-Group */
+
+.bottom-group {
+    display: block;
+    margin: 0 auto;
+    width: 50vw;
+}
+/* Bottom-Group */
+
+/* Footer-Section */
+footer {
+    font-family: fredoka;
+    text-align: center;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 10px;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    color: #ffffff;
+}
+/* Footer-Section */
+/* -- Media Queries -- */
+/* Media Desktop */
+@media (min-width: 1024px) {
+    html {
+        font-size: 100%;
+    }
+
+    /* Hero-Section */
+    .hero-bg {
+        display: flex;
+        flex-direction: row-reverse;
+        flex-wrap: nowrap;
+        padding: 0 10vw;
+    }
+
+    .hero-logo img {
+        width: 70vh;
+        margin-top: 15vh;
+    }
+
+    .hero-text {
+        margin-top: 30vh;
+        padding-right: 10vw;
+    }
+    
+    .hero-text button {
+        margin-top: 5vh;
+    }
+    /* Hero Section */
+    /* About-Section */
+    .about-section {
+        padding: 0 5vw;
+        height: 110vh;
+    }
+
+    .about {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    .about-image img {
+        width: 35vw;
+    }
+
+    .about-desc p {
+        font-size: 2.5vw;
+    }
+
+    .about-section h1 {
+        padding-top: 15vh;
+    }
+
+    .about-desc {
+        padding-left: 5vw;
+    }
+    /* About-Section */
+
+    /* Products-Section */
+    .products-main {
+        display: flex;
+    }
+
+    .ori-box, .sea-box {
+        width: 50vw;
+    }
+
+    .ori-box img, .sea-box img {
+        width: 23vw;
+    }
+
+    .products-main h2 {
+        font-size: 4vw;
+    }
+
+    .products-main p {
+        font-size: 2vw;
+    }
+
+    .products {
+        padding-top: 12vh;
+    }
+    /* Products-Section */
+
+    /* Location-Section */
+    .location {
+        padding: 0 5vw;
+    }
+    .map-frame {
+        margin-top: 5vh;
+        display: flex;
+    }
+
+    .map-desc {
+        padding: 5vh 5vw; 
+    }
+
+    .map-desc p {
+        font-size: 2.5vw;
+    }
+    /* Location-Section */
+}
+/* Media Desktop */
+
+/* Media Tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+    html  {
+        font-size: 75%;
+    }
+    
+    /* Hero-Section */
+    .navbar a {
+        font-size: 5vw;
+    }
+
+    .hero-logo img {
+        height: 40vh;
+    }
+
+    .hero-text {
+        text-align: center;
+    }
+
+    .hero-bg {
+        padding-top: 15vh;
+    }
+
+    .hero-logo {
+        text-align: center;
+    }
+
+    .hero-text button {
+        margin-top: 3vh;
+        font-size: 5vw;
+        width: fit-content;
+    }
+
+    .hero-text h1 {
+        font-size: 6vw;
+    }
+    /* Hero-Section */
+
+    /* About-Section */
+    .about-section {
+        padding:  0 5vw;
+        height: 110vh;
+    }
+
+    .about-section h1 {
+        padding-top: 10vh;
+        font-size: 8vh;
+    }
+
+    .about-image {
+        text-align: center;
+    }
+
+    .about-image img {
+        height: 30vh;
+    }
+
+    .about-desc p {
+        font-size: 3vw;
+        text-align: center;
+    }
+
+    .about-desc h2 {
+        padding-bottom: 5px;
+        text-align: center;
+        font-size: 10vh;
+    }
+    /* About-Section */
+    /* Products-Section */
+    .products-main {
+        display: flex;
+    }
+
+    .ori-box, .sea-box {
+        width: 50vw;
+    }
+
+    .ori-box img, .sea-box img {
+        width: 30vw;
+    }
+
+    .products-main h2 {
+        font-size: 5vw;
+    }
+
+    .products-main p {
+        font-size: 2vw;
+    }
+
+    .products {
+        padding-top: 10vh;
+    }
+    /* Products-Section */
+    /* Location-Section */
+    .location {
+        padding: 0 5vw;
+    }
+
+    .map-frame iframe {
+        width: 90vw;
+        height: 70vh;
+    }
+
+    .map-frame {
+        width: fit-content;
+        margin-top: 5vh;
+    }
+
+    .map-desc p {
+        margin: 0;
+    }
+
+    .map-desc {
+        padding: 0.5vh 0.5vw;
+    }
+    /* Location-Section */
+}
+/* Media Tablet */
+
+/* Media Mobile */
+/* Gaya untuk Mobile (kurang dari 768px) */
+@media (max-width: 767px) {
+    html {
+        font-size: 55%;
+    }
+
+    /* Hero-Section */
+    .navbar a {
+        font-size: 5vw;
+    }
+
+    .hero-logo img {
+        height: 30vh;
+    }
+    
+    .hero-text {
+        text-align: center;
+    }
+
+    .hero-logo {
+        text-align: center;
+    }
+
+    .hero-bg {
+        padding-top: 20vh;
+    }
+
+    .hero-text h1 {
+        font-size: 7vw;
+    }
+
+    .hero-text button {
+        width: fit-content;
+        font-size: 5vw;
+        margin-top: 2vh;
+    }
+    /* Hero-Section */
+    /* About-Section */
+    .about-section {
+        padding:  0 5vw;
+        height: 110vh;
+    }
+
+    .about-section h1 {
+        padding-top: 15vh;
+        font-size: 8vw;
+    }
+
+    .about-image {
+        text-align: center;
+    }
+
+    .about-image img {
+        height: 30vh;
+    }
+
+    .about-desc p {
+        font-size: 4vw;
+        text-align: center;
+    }
+
+    .about-desc h2 {
+        padding-bottom: 5px;
+        text-align: center;
+        font-size: 6vh;
+    }
+    /* About-Section */
+    /* Products-Section */
+
+    .products {
+        height: fit-content;
+    }
+    .products h1 {
+        padding-top: 9vh;
+        font-size: 8vw;
+    }
+
+    .products-main {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .ori-box, .sea-box {
+        width: 100vw;
+    }
+
+    .ori-box img, .sea-box img {
+        margin-top: 5vh;
+        height: 40vw;
+    }
+
+    .products-main h2 {
+        margin-top: 2vh;
+        font-size: 5vh;
+    }
+
+    .products-main p {
+        margin: 0;
+        margin-top: 1vh;
+        font-size: 3vh;
+    }
+
+    .sea-box {
+        margin-bottom: 5vh;
+    }
+    /* Products-Section */
+    /* Location-Section */
+    .location {
+        padding: 0 5vw;
+    }
+
+    .map-frame iframe {
+        width: 90vw;
+        height: 70vh;
+    }
+
+    .map-frame {
+        width: fit-content;
+        margin-top: 5vh;
+    }
+
+    .map-desc p {
+        margin: 0;
+    }
+
+    .map-desc {
+        padding: 0.5vh 0.5vw;
+    }
+    /* Location-Section */
+    /* Bottom-Group */
+    .bottom-group {
+        width: 80vw;
+    }
+    /* Bottom-Group */
+    /* Footer */
+    footer {
+        font-size: 2vw;
+    }
+    /* Footer */
+}
+/* Media Mobile */
+
+@media (max-width: 595px) {
+    .about-desc p {
+        font-size: 7vw;
+    }
+
+    .map-desc p {
+        font-size: 3vw;
+    }
+}
